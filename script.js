@@ -24,6 +24,7 @@ fetch(file)
                                 <div>
                                     <div><strong>${song.TrackName}</strong> <br> ${song.ArtistNames}</div>
                                     <div><em>${song.AlbumName}</em> - ${song.ReleaseDate.slice(0, 4)}</div>
+									<div>${song.Genres.replace(/,/g, ', ')}</div>
                                 </div>
                                 <span class="duration">${msToMinutesSecs(song.Duration)}</span>
                             </div>
